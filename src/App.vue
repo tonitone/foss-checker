@@ -5,15 +5,37 @@
       <router-link to="/about">About</router-link>
     </div>
     <router-view />
+
+    <div id="fileReader">
+      <file-reader @load="text = $event"></file-reader>
+      <pre rows="10" v-text="text"></pre>
+      <br />
+      <file-reader @load="text = $event"></file-reader>
+    </div>
   </div>
 </template>
+
+<script>
+import FileReader from "./components/FileReader";
+
+export default {
+  name: "Hello",
+  data: () => ({ text: "" }),
+  components: {
+    FileReader
+  },
+  props: {
+    headline: String,
+    msg: String
+  }
+};
+</script>
 
 <style lang="scss">
 #app {
   font-family: Avenir, Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  text-align: center;
   color: #2c3e50;
 }
 

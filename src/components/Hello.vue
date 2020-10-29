@@ -2,12 +2,6 @@
   <div class="hello">
     <h1>{{ headline }}</h1>
     <p>{{ msg }}</p>
-    <p>
-      Check digga
-      <a href="https://cli.vuejs.org" target="_blank" rel="noopener"
-        >vue-cli documentation</a
-      >.
-    </p>
   </div>
 </template>
 
@@ -23,10 +17,8 @@ export default {
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped lang="scss">
-h3 {
-  margin: 40px 0 0;
-}
-a {
-  color: #ff0000;
+.hello {
+  font-size: 18;
+  border: 3px dashed grey
 }
 </style>
