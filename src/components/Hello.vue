@@ -16,9 +16,4 @@ export default {
 </script>
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
-<style scoped lang="scss">
-.hello {
-  font-size: 18;
-  border: 3px dashed grey
-}
-</style>
+<style scoped lang="scss"></style>
