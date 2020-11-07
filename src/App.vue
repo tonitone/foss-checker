@@ -7,10 +7,8 @@
     <router-view />
 
     <div id="fileReader">
-      <file-reader @load="text = $event"></file-reader>
-      <pre rows="10" v-text="text"></pre>
-      <br />
-      <file-reader @load="text = $event"></file-reader>
+      <pre rows="10" v-text="loadedFileContent"></pre>
+      <file-reader @load="loadedFileContent = $event"></file-reader>
     </div>
   </div>
 </template>
@@ -19,8 +17,13 @@
 import FileReader from "./components/FileReader";
 
 export default {
+  methods: {
+    displayJson: () => {
+      console.log(FileReader);
+    }
+  },
   name: "Hello",
-  data: () => ({ text: "" }),
+  data: () => ({ loadedFileContent: "" }),
   components: {
     FileReader
   },
