@@ -17,11 +17,6 @@
 import FileReader from "./components/FileReader";
 
 export default {
-  methods: {
-    displayJson: () => {
-      console.log(FileReader);
-    }
-  },
   name: "Hello",
   data: () => ({ loadedFileContent: "" }),
   components: {
@@ -47,10 +42,10 @@ export default {
 
   a {
     font-weight: bold;
-    color: #2c3e50;
+    color: #ccc;
 
     &.router-link-exact-active {
-      color: #42b983;
+      color: #f90;
     }
   }
 }
