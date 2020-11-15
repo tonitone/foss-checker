@@ -12,6 +12,8 @@
     "api-npm": "^1.0.0",
     "axios": "^0.21.0",
     "core-js": "^3.6.5",
+    "fundamental-styles": "^0.13.0",
+    "fundamental-vue": "^0.18.3",
     "npm-registry-fetch": "^9.0.0",
     "vue": "^2.6.11",
     "vue-router": "^3.2.0",

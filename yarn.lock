@@ -857,6 +857,14 @@
     lodash "^4.17.19"
     to-fast-properties "^2.0.0"
 
+"@ckienle/k-pop@^0.7.0":
+  version "0.7.0"
+  resolved "https://registry.yarnpkg.com/@ckienle/k-pop/-/k-pop-0.7.0.tgz#d106d81971c7688b9fe9775dd7bc3048e2f09808"
+  integrity sha512-38B5kUc4nawO70CyEq44sSEE4E/tvbBYJeVosYSEI03JV59luifd8rKoGIPeKnkYDeTLauoIa51gNXgZhPthGw==
+  dependencies:
+    "@linusborg/vue-simple-portal" "^0.1.3"
+    popper.js "^1.15.0"
+
 "@hapi/address@2.x.x":
   version "2.1.4"
   resolved "https://registry.yarnpkg.com/@hapi/address/-/address-2.1.4.tgz#5d67ed43f3fd41a69d4b9ff7b56e7c0d1d0a81e5"
@@ -897,6 +905,13 @@
     cssnano "^4.0.0"
     cssnano-preset-default "^4.0.0"
     postcss "^7.0.0"
+
+"@linusborg/vue-simple-portal@^0.1.3":
+  version "0.1.4"
+  resolved "https://registry.yarnpkg.com/@linusborg/vue-simple-portal/-/vue-simple-portal-0.1.4.tgz#08d1396b34690c7d82ba461e5c46dbdb463b4084"
+  integrity sha512-vYeWYIT9RQ+Lyg6SECPf5+rMeqni7QfXVT/srPkK5NqbpKhppLtkBsPo+VlP61ZecsS1fQQxlfu6Fng/eNukQQ==
+  dependencies:
+    nanoid "^2.0.1"
 
 "@mrmlnc/readdir-enhanced@^2.2.1":
   version "2.2.1"
@@ -4096,6 +4111,14 @@ flush-write-stream@^1.0.0:
     inherits "^2.0.3"
     readable-stream "^2.3.6"
 
+focus-trap@^5.0.1:
+  version "5.1.0"
+  resolved "https://registry.yarnpkg.com/focus-trap/-/focus-trap-5.1.0.tgz#64a0bfabd95c382103397dbc96bfef3a3cf8e5ad"
+  integrity sha512-CkB/nrO55069QAUjWFBpX6oc+9V90Qhgpe6fBWApzruMq5gnlh90Oo7iSSDK7pKiV5ugG6OY2AXM5mxcmL3lwQ==
+  dependencies:
+    tabbable "^4.0.0"
+    xtend "^4.0.1"
+
 follow-redirects@^1.0.0, follow-redirects@^1.10.0:
   version "1.13.0"
   resolved "https://registry.yarnpkg.com/follow-redirects/-/follow-redirects-1.13.0.tgz#b42e8d93a2a7eea5ed88633676d6597bc8e384db"
@@ -4208,6 +4231,22 @@ functional-red-black-tree@^1.0.1:
   version "1.0.1"
   resolved "https://registry.yarnpkg.com/functional-red-black-tree/-/functional-red-black-tree-1.0.1.tgz#1b0ab3bd553b2a0d6399d29c0e3ea0b252078327"
   integrity sha1-GwqzvVU7Kg1jmdKcDj6gslIHgyc=
+
+fundamental-styles@^0.13.0:
+  version "0.13.0"
+  resolved "https://registry.yarnpkg.com/fundamental-styles/-/fundamental-styles-0.13.0.tgz#bcb139dbb7ef5782b035c052b50b114c67bbc199"
+  integrity sha512-FjPwZFi7MEDTu/LqWXWRGTUUAiCGuc0a200hMhtWDABX7G5zAW/CACoinPvHvFpVLBQHHYWBCGNjkWBVEra9ZA==
+
+fundamental-vue@^0.18.3:
+  version "0.18.3"
+  resolved "https://registry.yarnpkg.com/fundamental-vue/-/fundamental-vue-0.18.3.tgz#ea89a3ae2bc48c3f96fd8ead34698e2fc60a82e0"
+  integrity sha512-ELjt3k8Z+gDnkR1KVbSSkiIh0M9nbWVBU6FhJ4ps/Qf4CRVpmAyDRlrm7vO411+nG3eUBBjLzwSy0tRRYQJEsA==
+  dependencies:
+    "@ckienle/k-pop" "^0.7.0"
+    "@linusborg/vue-simple-portal" "^0.1.3"
+    focus-trap "^5.0.1"
+    lodash.debounce "^4.0.8"
+    popper.js "^1.15.0"
 
 gauge@~2.7.3:
   version "2.7.4"
@@ -5493,6 +5532,11 @@ locate-path@^5.0.0:
   dependencies:
     p-locate "^4.1.0"
 
+lodash.debounce@^4.0.8:
+  version "4.0.8"
+  resolved "https://registry.yarnpkg.com/lodash.debounce/-/lodash.debounce-4.0.8.tgz#82d79bff30a67c4005ffd5e2515300ad9ca4d7af"
+  integrity sha1-gteb/zCmfEAF/9XiUVMArZyk168=
+
 lodash.defaultsdeep@^4.6.1:
   version "4.6.1"
   resolved "https://registry.yarnpkg.com/lodash.defaultsdeep/-/lodash.defaultsdeep-4.6.1.tgz#512e9bd721d272d94e3d3a63653fa17516741ca6"
@@ -5963,6 +6007,11 @@ nan@^2.12.1, nan@^2.13.2:
   version "2.14.2"
   resolved "https://registry.yarnpkg.com/nan/-/nan-2.14.2.tgz#f5376400695168f4cc694ac9393d0c9585eeea19"
   integrity sha512-M2ufzIiINKCuDfBSAUr1vWQ+vuVcA9kqx8JJUsbQi6yf1uGRyb7HfpdfUr5qLXf3B/t8dPvcjhKMmlfnP47EzQ==
+
+nanoid@^2.0.1:
+  version "2.1.11"
+  resolved "https://registry.yarnpkg.com/nanoid/-/nanoid-2.1.11.tgz#ec24b8a758d591561531b4176a01e3ab4f0f0280"
+  integrity sha512-s/snB+WGm6uwi0WjsZdaVcuf3KJXlfGl2LcxgwkEwJF0D/BWzVWAZW/XY4bFaiR7s0Jk3FPvlnepg1H1b1UwlA==
 
 nanomatch@^1.2.9:
   version "1.2.13"
@@ -6706,6 +6755,11 @@ pnp-webpack-plugin@^1.6.4:
   integrity sha512-7Wjy+9E3WwLOEL30D+m8TSTF7qJJUJLONBnwQp0518siuMxUQUbgZwssaFX+QKlZkjHZcw/IpZCt/H0srrntSg==
   dependencies:
     ts-pnp "^1.1.6"
+
+popper.js@^1.15.0:
+  version "1.16.1"
+  resolved "https://registry.yarnpkg.com/popper.js/-/popper.js-1.16.1.tgz#2a223cb3dc7b6213d740e40372be40de43e65b1b"
+  integrity sha512-Wb4p1J4zyFTbM+u6WuO4XstYx4Ky9Cewe4DWrel7B0w6VVICvPwdOpotjzcf6eD8TsckVnIMNONQyPIUFOUbCQ==
 
 portfinder@^1.0.26:
   version "1.0.28"
@@ -8345,6 +8399,11 @@ svgo@^1.0.0:
     unquote "~1.1.1"
     util.promisify "~1.0.0"
 
+tabbable@^4.0.0:
+  version "4.0.0"
+  resolved "https://registry.yarnpkg.com/tabbable/-/tabbable-4.0.0.tgz#5bff1d1135df1482cf0f0206434f15eadbeb9261"
+  integrity sha512-H1XoH1URcBOa/rZZWxLxHCtOdVUEev+9vo5YdYhC9tCY4wnybX+VQrCYuy9ubkg69fCBxCONJOSLGfw0DWMffQ==
+
 table@^5.2.3:
   version "5.4.6"
   resolved "https://registry.yarnpkg.com/table/-/table-5.4.6.tgz#1292d19500ce3f86053b05f0e8e7e4a3bb21079e"
@@ -9190,7 +9249,7 @@ ws@^6.0.0, ws@^6.2.1:
   dependencies:
     async-limiter "~1.0.0"
 
-xtend@^4.0.0, xtend@~4.0.1:
+xtend@^4.0.0, xtend@^4.0.1, xtend@~4.0.1:
   version "4.0.2"
   resolved "https://registry.yarnpkg.com/xtend/-/xtend-4.0.2.tgz#bb72779f5fa465186b1f438f674fa347fdb5db54"
   integrity sha512-LKYU1iAXJXUgAXn9URjiu+MWhyUXHsvfp7mcuYm9dSUKK0/CjtrUwFAxD82/mCWbtLsGjFIad0wIsod4zrTAEQ==
