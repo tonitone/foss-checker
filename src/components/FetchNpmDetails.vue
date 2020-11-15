@@ -1,22 +1,28 @@
 <template>
   <div>
     <p v-if="status === 'success'">Success</p>
-    <p v-else-if="status === 'error'">Error. Please load your package.json again, or try again later</p>
+    <p v-else-if="status === 'error'">
+      Error. Please load your package.json again, or try again later
+    </p>
     <p v-else-if="status === 'pending'">Please load your package.json</p>
     <p v-else-if="status === 'loading'">Loading npm-packages</p>
 
-    <ul class="test-list">
-      <li
-        class="test-list--item"
+    <fd-list-group>
+      <fd-list-group-item
         v-for="npmPackage in npmPackageList"
         :key="npmPackage.name"
       >
-        Name: <strong>{{ npmPackage.name }}</strong> <br />
+        <h4>{{ npmPackage.name }}</h4> <br />
         Version: {{ npmPackage.version }} <br />
         Homepage: {{ npmPackage.homepage }} <br />
         License: {{ npmPackage.license }}
-      </li>
-    </ul>
+        <div class="fdd-button__states">
+          <fd-button styling="emphasized" state="normal"
+            >load OpenSource</fd-button
+          >
+        </div>
+      </fd-list-group-item>
+    </fd-list-group>
   </div>
 </template>
 
